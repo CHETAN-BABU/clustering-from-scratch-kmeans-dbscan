@@ -22,6 +22,8 @@ Implements two clustering algorithms **using only NumPy** (no scikit-learn) and 
 | B | Prototype | 2 | 0 | 1292.76 | **0.514** |
 | B | DBSCAN | 1 | 15 | – | 0.000 |
 
+<p align="center"><img src="images/dbscan_dataset_a.png" width="45%"> <img src="images/dbscan_dataset_b.png" width="45%"></p>
+
 On compact Gaussian clusters both methods do well. On ring + blob data a single global ε can't handle both densities, so DBSCAN merges everything. This is a useful lesson in how sensitive DBSCAN is to its parameters.
 
 ## Run it
